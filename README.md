@@ -1,7 +1,9 @@
-# Keyence-SZ-16D-Driver
+# Keyence-SZ-16D-Driver (Python)
 
-Driver for plot LiDAR/LaserScan ranges of Keyence SZ-16D with RS232/422 interface and 270 degrees of range.
-Also provides the ROS Package to use this data on robots. 
+Python Driver for plot LiDAR/LaserScan ranges of Keyence SZ-16D with RS232/422 interface and 270 degrees of range.
+Also provides the ROS Package to use this data on robots.
+
+![AS_1917_L](https://user-images.githubusercontent.com/6139272/162611443-5d9e5e88-28f7-494e-b4b5-f2af5dca9033.png)
 
 ## Requirements
 
@@ -30,27 +32,27 @@ Place the `keyence_laser` package on your catkin workspace and use:
 
 After that you can use `roslaunch` or you can directly point to `laser.py` using:
 `$ rosrun keyence_laser laser.py`
+`$ rosrun rviz rviz`
 
-If the Rviz config doesn't load, make sure to add the LaserScan on Display Types and to point the `/keyence_laser` topic to feed data. On Global Options, change the Fixed Frame `map` to `laser_frame`.
+If the Rviz config doesn't load, make sure to add the LaserScan on Display Types and to point the `/keyence_laser` topic to feed data. On Global Options, change the Fixed Frame `map` to `laser_frame`. You can see on images bellow the configuration.
 
 ## Images
 
-Terminal
+Terminal (executing `roscore` and the scripts):
 
 ![Screenshot at Apr 10 02-00-29](https://user-images.githubusercontent.com/6139272/162610963-86ab6bc1-0f6f-4c17-a310-fb29c4066d3c.png)
 
-Rviz
+Rviz showing the data capture from LiDAR:
 
 ![Screenshot at Apr 10 02-01-11](https://user-images.githubusercontent.com/6139272/162610973-c9163c72-9945-4692-8f88-480c06458cb8.png)
 
 
+Rviz showing LiDAR data when I tried to block the Laser:
 
 https://user-images.githubusercontent.com/6139272/162611125-5a763e35-e87c-4ec9-931c-903c342f0cba.mp4
 
 
-
-
-Matplotlib
+Matplotlib using polar plot to show the LiDAR data (updating in real-time):
 
 ![Screenshot at Apr 10 04-48-44](https://user-images.githubusercontent.com/6139272/162610985-30755284-a3b4-4cb8-b22f-98e751c26183.png)
 
