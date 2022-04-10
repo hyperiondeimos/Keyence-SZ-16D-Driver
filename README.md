@@ -37,11 +37,23 @@ If the Rviz config doesn't load, make sure to add the LaserScan on Display Types
 
 Terminal
 
+![Screenshot at Apr 10 02-00-29](https://user-images.githubusercontent.com/6139272/162610963-86ab6bc1-0f6f-4c17-a310-fb29c4066d3c.png)
 
 Rviz
 
+![Screenshot at Apr 10 02-01-11](https://user-images.githubusercontent.com/6139272/162610973-c9163c72-9945-4692-8f88-480c06458cb8.png)
+
+
+
+https://user-images.githubusercontent.com/6139272/162611125-5a763e35-e87c-4ec9-931c-903c342f0cba.mp4
+
+
+
 
 Matplotlib
+
+![Screenshot at Apr 10 04-48-44](https://user-images.githubusercontent.com/6139272/162610985-30755284-a3b4-4cb8-b22f-98e751c26183.png)
+
 
 ## Additional Hardware Used
 
