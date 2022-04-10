@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+    
+    <node name="laser_tester" pkg="rviz" type="rviz" output="screen" args="$(find keyence_laser)/config/laser_config.rviz"/>
+    <node name="laser_node" pkg="keyence_laser" type="laser.py" output="screen" />
+    
+</launch>
