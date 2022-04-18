@@ -10,9 +10,9 @@ class KeyenceSZ16Dping:
 
     def __init__(self):
         try:
-            # self.obj_port = serial.Serial('/dev/ttyUSB0', 19200, 8, 'N', 1, None)  # open serial port to communicate with the device (linux)
+            self.obj_port = serial.Serial('/dev/ttyUSB0', 19200, 8, 'N', 1, None)  # open serial port to communicate with the device (linux)
             # self.obj_port = serial.Serial('COM3', 19200, 8, 'N', 1, None)  # open serial port (windows)
-            self.obj_port = serial.Serial('/dev/tty.usbserial-1420', 19200, 8, 'N', 1, None)  # open serial port (osx)
+            # self.obj_port = serial.Serial('/dev/tty.usbserial-1420', 19200, 8, 'N', 1, None)  # open serial port (osx)
         except serial.SerialException:
             print("ERROR: check if already have another device on this port!")
             serial.close()

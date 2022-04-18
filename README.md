@@ -19,9 +19,10 @@ Tested used these libraries and ROS version:
 
 The main files of this package are:
 
-* `src/laser.py`: python script to publish the LiDAR data on `/keyence_laser` topic.
+* `src/laser.py`: python script to publish the LiDAR data on `/keyence_laser` topic and point cloud 2 data on `/keyence_PointCloud` topic.
 * `src/plot_test.py`: python script to user compare the LiDAR data acquired from the SZ-16D Hardware directly using NumPy and Matplotlib.
-* `src/sz16d.py`: python script to communicate with LiDAR. Returns a list of 751 ranges in Int or Float. This is the Driver!
+* `src/sz16d.py`: python script to communicate with LiDAR. Returns a list of 751 ranges (meters or millimeters) in Int or Float. This is the Driver!
+* `src/fake_laser_data.py`: python script to simulate fake data from LiDAR. You can change the values as you want.
 * `config/laser_config.rviz`: Rviz config file to show the LiDAR data.
 * `launch/lidar.launch`: Launch file that launch Rviz using `laser_config.rviz` configurations and `laser.py` script.
 
